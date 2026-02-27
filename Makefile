@@ -28,4 +28,4 @@ $(TARGET): $(OBJECTS)
 
 # Cleans/deletes all .o files
 clean:
-	rm -f $(OBJECTS) $(DEPS) $(TARGET)
+	rm -f $(OBJECTS) $(DEPS) 
