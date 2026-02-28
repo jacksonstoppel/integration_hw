@@ -67,7 +67,7 @@ RK4_x100, RK4_y100 = read_stacked_xy("RK4_100_pts.txt")
 RK4_x500, RK4_y500 = read_stacked_xy("RK4_500_pts.txt")
 RK4_x1000, RK4_y1000 = read_stacked_xy("RK4_1000_pts.txt")
 
-"""# Plots for problem l
+# Plots for problem l
 plt.scatter(euler_x50, euler_y50, label = "Euler Method", c="red")
 plt.scatter(RK4_x50, RK4_y50, label = "RK4 data", c="blue")
 plt.plot(x_prob1, y_prob1, label = "Analytic Solution")
@@ -170,7 +170,7 @@ plt.ylabel("y")
 plt.legend()
 plt.grid(True)
 plt.show()
-"""
+
 
 n_mat = [10, 50, 75, 100, 500]
 y10 = euler_y10[np.where(euler_x10 == 0.8)[0]]
