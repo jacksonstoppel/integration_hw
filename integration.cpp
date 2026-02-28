@@ -6,7 +6,7 @@
 
 
 std::tuple<std::vector<double>, std::vector<double>> integrator::euler(double x_0, double b, double num_points, double initial_y) {
-    double step = (x_0 - b)/num_points;
+    double step = std::abs(x_0 - b)/num_points;
     double x_val = x_0;
     std::vector<double> derv_vals;
     std::vector<double> x_vals;
@@ -26,7 +26,7 @@ std::tuple<std::vector<double>, std::vector<double>> integrator::euler(double x_
 }
 
 std::tuple<std::vector<double>, std::vector<double>> integrator::RK4(double x_0, double b, double num_points, double initial_y) {
-    double step = (x_0 - b)/num_points;
+    double step = std::abs(x_0 - b)/num_points;
     double x_val = x_0;
     std::vector<double> derv_vals;
     std::vector<double> x_vals;
